@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game.jk </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Title Screen -->
+        <div class="title-screen active">
+            <h1>Snake Game created BY Abhiii💥 </h1>
+            <input type="text" id="playerName" placeholder="Enter Your Name" />
+            <button id="startGameBtn">Start Game</button>
+        </div> 
+
+        <!-- Game Canvas -->
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        
+        <!-- Game Info -->
+        <div class="game-info">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="high-score">High Score: <span id="highScore">0</span></div>
+        </div>
+
+        <!-- Game Over Section -->
+        <div class="game-over" id="gameOver">
+            <h2>Game Over!</h2>
+            <p>Your Score: <span id="finalScore">0</span></p>
+            <button id="playAgainBtn">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
